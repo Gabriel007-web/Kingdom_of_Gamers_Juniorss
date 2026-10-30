@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#10152b"/><stop offset="1" stop-color="#26204a"/></linearGradient><linearGradient id="portal" x2="1" y2="1"><stop stop-color="#6b2fd9"/><stop offset="1" stop-color="#5195d6"/></linearGradient></defs>
+  <path fill="url(#sky)" d="M0 0h800v500H0z"/><circle cx="608" cy="111" r="50" fill="#d9d0aa" opacity=".8"/>
+  <path d="M0 370h800v130H0z" fill="#111425"/><path d="M91 370V177h54v-56h63v249M595 370V116h63v62h52v192" fill="#1b1d38" stroke="#676086" stroke-width="5"/>
+  <path d="M320 369V196q0-108 80-108t80 108v173" fill="none" stroke="url(#portal)" stroke-width="20"/><path d="M350 370V203q0-77 50-77t50 77v167" fill="#10152b" stroke="#9b7ce2" stroke-width="4"/>
+  <path d="M0 422l202-32 97 20 129-42 110 42 94-20 168 31v79H0z" fill="#0b0b12"/><g stroke="#6b2fd9" stroke-opacity=".75" stroke-width="4"><path d="M139 202h70M616 230h72M338 311h124"/></g>
+  <g fill="#a9b9dc"><circle cx="180" cy="73" r="3"/><circle cx="278" cy="119" r="2"/><circle cx="530" cy="58" r="3"/></g>
+</svg>

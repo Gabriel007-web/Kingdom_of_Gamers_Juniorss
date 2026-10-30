@@ -1,0 +1,7 @@
+﻿<!-- Símbolo vetorial original da K.G.J., desenhado para manter a sigla legível. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#0B0B12"/>
+  <rect x="1" y="1" width="62" height="62" rx="12" fill="none" stroke="#6B2FD9" stroke-width="2"/>
+  <text x="32" y="39" text-anchor="middle" fill="#fff" font-family="Sora, Inter, Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="-1.4">K.G.J.</text>
+  <path d="M28 48h8" stroke="#FF6A3D" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <script src="js/api.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B12">
+  <link rel="icon" type="image/svg+xml" href="assets/kgj-mark.svg">
+  <meta name="description" content="Descubra jogos independentes, conheça seus criadores e encontre sua próxima aventura na K.G.J.">
+  <title>K.G.J. — jogos que merecem ser descobertos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/jogos-adicionais.js" defer></script>
+  <script src="js/hero-carousel.js" defer></script><script src="js/home-api.js" defer></script>
+  <script src="js/busca.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand brand-header" href="#inicio" aria-label="K.G.J. — Voltar para a página inicial"><img src="assets/mascote-kgj-logo.png" alt="" width="54" height="54" aria-hidden="true"></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="active" href="#descobrir">Descobrir</a><a href="destaques.html">Destaques</a><a href="catalogo.html">Catálogo</a><a href="#criadores">Para criadores</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="header-search" id="headerSearch">
+        <label class="header-search-field"><span class="visually-hidden">Buscar jogos</span><input id="siteSearch" type="search" placeholder="Buscar jogos..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions"></label>
+        <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
+      </div>
+      <a class="login-link" href="entrar.html">Entrar</a><a class="button button-small" href="criar-conta.html">Criar conta</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero hero-discovery" id="descobrir" aria-labelledby="discoveryTitle">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> CURADORIA INDEPENDENTE</div>
+        <h1 id="discoveryTitle">DESCUBRA SEU<br><span>PRÓXIMO JOGO</span></h1>
+        <p>Jogos independentes, experiências únicas e mundos diferentes para descobrir — tudo em um só lugar.</p>
+        <div class="hero-actions">
+          <a class="button hero-button-primary" href="#jogos">Explorar jogos</a>
+          <a class="button hero-button-secondary" href="destaques.html">Ver destaques</a>
+        </div>
+      </div>
+      <article class="hero-feature card-hover" aria-labelledby="featuredGameTitle">
+        <div class="hero-game-art">
+          <img id="heroGameImage" src="assets/capa-coracao-sucata.png" alt="Capa oficial de Coração de Sucata: um jovem e um pequeno robô diante de uma cidade ao pôr do sol." fetchpriority="high">
+          <span class="hero-feature-label">VITRINE DA COMUNIDADE</span>
+          <span class="hero-mascot-watermark" aria-hidden="true"></span>
+          <div class="hero-carousel-controls" aria-label="Controles dos jogos em destaque">
+            <button id="heroCarouselPrevious" type="button" aria-label="Jogo em destaque anterior">‹</button>
+            <span id="heroCarouselCounter" aria-live="polite">01 — 04</span>
+            <button id="heroCarouselNext" type="button" aria-label="Próximo jogo em destaque">›</button>
+          </div>
+        </div>
+        <div class="hero-feature-info">
+          <div class="hero-feature-heading">
+            <div>
+              <p class="hero-game-category"><span id="heroGameGenre">AVENTURA NARRATIVA</span><span id="heroGameCategory">AVENTURA · PC</span></p>
+              <h2 id="featuredGameTitle">Coração de Sucata</h2>
+            </div>
+          </div>
+          <div class="hero-game-meta">
+            <div><span>AVALIAÇÃO</span><strong><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m8 1.4 2 4.1 4.5.7-3.25 3.2.77 4.5L8 11.8l-4.02 2.1.77-4.5L1.5 6.2 6 5.5 8 1.4Z"/></svg> <span id="heroGameRating">4,8</span></strong></div>
+            <div class="hero-game-price"><span>PREÇO</span><strong id="heroGamePrice">R$ 24,90</strong></div>
+          </div>
+        </div>
+        <a class="hero-feature-open" id="heroFeatureLink" href="jogo.html?jogo=coracao-de-sucata" aria-label="Ver jogo Coração de Sucata"></a>
+      </article>
+    </section>
+
+    <section class="discover section-wrap" id="jogos">
+      <div class="section-heading"><div><span class="eyebrow muted">CURADORIA INDEPENDENTE</span><h2>Tem jogo pra todo <span>tipo de curiosidade.</span></h2></div><a class="text-link desktop-link" href="#todos">Ver todos os jogos </a></div>
+      <div class="filters" role="group" aria-label="Filtrar jogos por categoria">
+        <button class="filter-chip card-hover selected" data-filter="todos"> <span>Todos</span></button><button class="filter-chip card-hover" data-filter="aventura"> <span>Aventura</span></button><button class="filter-chip card-hover" data-filter="acao"> <span>Ação</span></button><button class="filter-chip card-hover" data-filter="puzzle"> <span>Puzzle</span></button><button class="filter-chip card-hover" data-filter="relax"> <span>Relax</span></button>
+        <label class="search-box card-hover"><input type="search" id="gameSearch" placeholder="Buscar jogos..." aria-label="Buscar jogos"></label>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card card-hover" data-category="aventura" data-name="maré de papel"><a class="game-cover card-hover cover-tide" href="#mare"><span class="cover-tag">NOVO</span><span class="tide-wave wave-a"></span><span class="tide-wave wave-b"></span><span class="cover-title">maré<br>de papel</span><span class="cover-platform">PC · MAC</span></a><div class="game-info"><div><h3>Maré de Papel</h3><p>Um mundo dobrado à mão</p></div><span class="price">R$ 24,90</span></div><div class="game-meta"><span>Aventura</span><span class="rating">Nota 4,8</span></div></article>
+        <article class="game-card card-hover" data-category="acao" data-name="neon na veia"><a class="game-cover card-hover cover-neon" href="#neon"><span class="cover-tag">EM ALTA</span><span class="neon-ring"></span><span class="cover-title">NEON<br>NA VEIA</span><span class="cover-platform">PC · LINUX</span></a><div class="game-info"><div><h3>Neon na Veia</h3><p>Corra. Atire. Repita.</p></div><span class="price">R$ 32,00</span></div><div class="game-meta"><span>Ação</span><span class="rating">Nota 4,9</span></div></article>
+        <article class="game-card card-hover" data-category="relax" data-name="jardim de outro mundo"><a class="game-cover card-hover cover-garden" href="#jardim"><span class="cover-tag">FEITO NO BRASIL</span><span class="cover-title">jardim de<br>outro mundo</span><span class="cover-platform">PC · SWITCH</span></a><div class="game-info"><div><h3>Jardim de Outro Mundo</h3><p>Plante memórias, colha estrelas</p></div><span class="price">R$ 18,50</span></div><div class="game-meta"><span>Relax</span><span class="rating">Nota 4,7</span></div></article>
+        <article class="game-card card-hover" data-category="puzzle" data-name="depois das seis"><a class="game-cover card-hover cover-clock" href="#seis"><span class="cover-tag">ESCOLHA DA CASA</span><span class="clock-face">6<span>:</span>00</span><span class="cover-title">depois<br>das seis</span><span class="cover-platform">PC · MAC</span></a><div class="game-info"><div><h3>Depois das Seis</h3><p>Pequenos enigmas, grandes dias</p></div><span class="price">R$ 21,90</span></div><div class="game-meta"><span>Puzzle</span><span class="rating">Nota 4,6</span></div></article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Nenhum jogo encontrado. Tente outra busca.</p>
+      <div class="mobile-all"><a class="text-link" href="#todos">Ver todos os jogos </a></div>
+    </section>
+
+    <section class="creator-banner card-hover" id="criadores"><div><span class="eyebrow">SEU PRÓXIMO JOGO MERECE SER VISTO</span><h2>Você cria.<br>O mundo <span>descobre.</span></h2><p>O Reino dos Jovens Gamers: um espaço para dar visibilidade a ideias independentes e aproximar criadores de quem ama jogar.</p><a class="button button-light" href="#publicar">Conheça o espaço do criador </a></div><div class="creator-doodle" aria-hidden="true"><img src="assets/mascote-tartaruga.png" alt=""></div></section>
+        <section class="home-contact-cta" aria-labelledby="homeContactTitle"><div><p class="contact-cta-kicker">PRECISA DE AJUDA?</p><h2 id="homeContactTitle">A equipe K.G.J. está por aqui.</h2><p>Fale com a gente para tirar dúvidas, pedir suporte ou compartilhar uma sugestão.</p></div><a class="home-contact-button card-hover" href="contato.html">Fale Conosco</a></section>
+    <footer><a class="brand" href="#inicio"><span class="brand-copy">K.G.J.<small>Kingdom of Gamers Juniors</small></span></a><span>Um lugar para jogos que merecem ser descobertos.</span><span class="footer-copy">Copyright 2026 K.G.J.</span></footer>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+

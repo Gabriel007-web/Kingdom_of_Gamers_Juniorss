@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <script src="js/api.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B12">
+  <meta name="description" content="Entre em contato com a equipe K.G.J. para suporte, dúvidas e sugestões.">
+  <link rel="icon" type="image/svg+xml" href="assets/kgj-mark.svg">
+  <title>Fale Conosco — K.G.J.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <script src="js/jogos-adicionais.js" defer></script>
+  <script src="js/busca.js" defer></script>
+  <script src="js/contato.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand brand-header" href="index.html" aria-label="K.G.J. — Voltar para a página inicial"><img src="assets/mascote-kgj-logo.png" alt="" width="54" height="54" aria-hidden="true"></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html#descobrir">Descobrir</a><a href="destaques.html">Destaques</a><a href="catalogo.html">Catálogo</a><a href="index.html#criadores">Para criadores</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="header-search" id="headerSearch"><label class="header-search-field"><span class="visually-hidden">Buscar jogos</span><input id="siteSearch" type="search" placeholder="Buscar jogos..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions"></label><div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div></div>
+      <a class="login-link" href="entrar.html">Entrar</a><a class="button button-small" href="criar-conta.html">Criar conta</a>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-hero" aria-labelledby="contactTitle">
+      <p class="contact-kicker">ESTAMOS AQUI PARA AJUDAR</p>
+      <h1 id="contactTitle">Fale com a <span>K.G.J.</span></h1>
+      <p>Tem uma dúvida, precisa de suporte ou quer compartilhar uma ideia? Nossa equipe está pronta para ouvir você.</p>
+    </section>
+
+    <div class="contact-layout">
+      <div class="contact-column">
+        <section class="contact-panel card-hover" id="canais" aria-labelledby="channelsTitle">
+          <p class="contact-kicker">CANAIS OFICIAIS</p>
+          <h2 id="channelsTitle">Entre em contato</h2>
+          <div class="contact-channel-group">
+            <h3>Telefone / WhatsApp</h3>
+            <ul class="contact-phones">
+              <li><span>(79) 99673-9720</span><span class="phone-actions"><a href="tel:+5579996739720">Ligar</a><a href="https://wa.me/5579996739720" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></li>
+              <li><span>(79) 99653-7441</span><span class="phone-actions"><a href="tel:+5579996537441">Ligar</a><a href="https://wa.me/5579996537441" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></li>
+              <li><span>(79) 99870-4535</span><span class="phone-actions"><a href="tel:+5579998704535">Ligar</a><a href="https://wa.me/5579998704535" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></li>
+            </ul>
+          </div>
+          <div class="contact-channel-group contact-email-group">
+            <h3>E-mail</h3>
+            <a class="contact-email" href="mailto:kgjfrontier@gmail.com.br">kgjfrontier@gmail.com.br</a>
+          </div>
+        </section>
+
+        <section class="contact-panel support-panel card-hover" id="suporte" aria-labelledby="supportTitle">
+          <p class="contact-kicker">ATENDIMENTO</p>
+          <h2 id="supportTitle">Conte com a gente</h2>
+          <p>Use nossos telefones, WhatsApp ou e-mail para tirar dúvidas, solicitar suporte ou enviar sugestões relacionadas à plataforma.</p>
+          <a class="support-link" href="#canais">Ver canais de contato <span aria-hidden="true">→</span></a>
+        </section>
+      </div>
+
+      <section class="contact-panel contact-form-panel card-hover" aria-labelledby="formTitle">
+        <p class="contact-kicker">ENVIE UMA MENSAGEM</p>
+        <h2 id="formTitle">Como podemos ajudar?</h2>
+        <form class="contact-form" id="contactForm">
+          <label for="contactName">Nome</label>
+          <input id="contactName" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+          <label for="contactEmail">E-mail</label>
+          <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+          <label for="contactSubject">Assunto</label>
+          <input id="contactSubject" name="assunto" type="text" placeholder="Sobre o que deseja falar?" required>
+          <label for="contactMessage">Mensagem</label>
+          <textarea id="contactMessage" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+          <button class="button contact-submit" type="submit">Enviar mensagem</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">Sua mensagem será encaminhada à equipe K.G.J.</p>
+        </form>
+      </section>
+    </div>
+
+    <section class="contact-panel contact-links-panel" aria-labelledby="helpTitle">
+      <div class="contact-links-heading"><div><p class="contact-kicker">MAIS INFORMAÇÕES</p><h2 id="helpTitle">Ajuda e informações</h2></div><p>Encontre orientações úteis sobre a plataforma K.G.J.</p></div>
+      <div class="help-links">
+        <a class="help-link card-hover" href="#suporte"><span>Suporte</span><small>Fale com nossa equipe</small><b aria-hidden="true">→</b></a>
+        <a class="help-link card-hover" href="#perguntas-frequentes"><span>Perguntas Frequentes</span><small>Respostas rápidas</small><b aria-hidden="true">→</b></a>
+        <a class="help-link card-hover" href="#termos-de-uso"><span>Termos de Uso</span><small>Informações sobre os termos</small><b aria-hidden="true">→</b></a>
+        <a class="help-link card-hover" href="#politica-de-privacidade"><span>Política de Privacidade</span><small>Saiba sobre privacidade</small><b aria-hidden="true">→</b></a>
+      </div>
+    </section>
+
+    <section class="contact-faq" id="perguntas-frequentes" aria-labelledby="faqTitle">
+      <div><p class="contact-kicker">DÚVIDAS COMUNS</p><h2 id="faqTitle">Perguntas Frequentes</h2></div>
+      <details class="faq-item card-hover"><summary>Como solicito suporte para a plataforma?</summary><p>Entre em contato por telefone, WhatsApp ou e-mail usando os canais oficiais desta página.</p></details>
+      <details class="faq-item card-hover"><summary>Posso enviar sugestões para a K.G.J.?</summary><p>Sim. Envie sua ideia pelo formulário ou por um de nossos canais de atendimento.</p></details>
+      <details class="faq-item card-hover"><summary>Como falo sobre um jogo ou sua compra?</summary><p>Envie uma mensagem informando o nome do jogo e os detalhes da sua dúvida para que possamos orientar você.</p></details>
+    </section>
+
+    <section class="contact-notices" aria-label="Documentos e políticas">
+      <article id="termos-de-uso"><h2>Termos de Uso</h2><p>As informações sobre os termos de uso estão em preparação. Para dúvidas, fale com a equipe pelo <a href="mailto:kgjfrontier@gmail.com.br?subject=Termos%20de%20Uso">e-mail oficial</a>.</p></article>
+      <article id="politica-de-privacidade"><h2>Política de Privacidade</h2><p>As informações sobre privacidade estão em preparação. Para esclarecimentos, entre em contato pelo <a href="mailto:kgjfrontier@gmail.com.br?subject=Privacidade">e-mail oficial</a>.</p></article>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="index.html"><span class="brand-copy">K.G.J.<small>Kingdom of Gamers Juniors</small></span></a><span>Um lugar para jogos que merecem ser descobertos.</span><span class="footer-copy">Copyright 2026 K.G.J.</span></footer>
+</body>
+</html>

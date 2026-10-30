@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <script src="js/api.js" defer></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B0B12">
+  <meta name="description" content="Veja os lançamentos recentes e os próximos jogos independentes da K.G.J."><link rel="icon" type="image/svg+xml" href="assets/kgj-mark.svg"><title>Destaques — K.G.J.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/destaques.css">
+  <script src="js/jogos-adicionais.js" defer></script>
+  <script src="js/busca.js" defer></script>
+  <script src="js/destaques-api.js" defer></script><script src="js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand brand-header" href="index.html" aria-label="K.G.J. — Voltar para a página inicial"><img src="assets/mascote-kgj-logo.png" alt="" width="54" height="54" aria-hidden="true"></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html#descobrir">Descobrir</a><a class="active" href="destaques.html" aria-current="page">Destaques</a><a href="catalogo.html">Catálogo</a><a href="index.html#criadores">Para criadores</a></nav>
+    <div class="nav-actions"><div class="header-search" id="headerSearch"><label class="header-search-field"><span class="visually-hidden">Buscar jogos</span><input id="siteSearch" type="search" placeholder="Buscar jogos..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions"></label><div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div></div><a class="login-link" href="entrar.html">Entrar</a><a class="button button-small" href="criar-conta.html">Criar conta</a></div>
+  </header>
+
+  <main class="highlights-main">
+    <section class="highlights-heading"><p class="highlights-kicker">K.G.J. / NOVIDADES</p><h1>Destaques</h1><p>Os jogos que chegaram e as próximas aventuras a caminho.</p></section>
+
+    <section class="release-section" aria-labelledby="recentTitle">
+      <div class="release-section-heading"><div><p class="release-kicker">JÁ DISPONÍVEIS</p><h2 id="recentTitle">Lançados recentemente</h2></div><a class="highlights-text-link" href="catalogo.html">Ver catálogo</a></div>
+      <a class="release-feature card-hover" href="jogo.html?jogo=mare-de-papel">
+        <div class="release-feature-image"><img src="assets/capa-mare.svg" alt="Barco de papel navegando sob a lua"><span class="release-badge">LANÇAMENTO RECENTE</span></div>
+        <div class="release-feature-copy"><span class="release-date">Disponível desde 23 de setembro de 2026</span><h3>Maré de Papel</h3><p>Um mundo dobrado à mão, cheio de caminhos e histórias para descobrir.</p><div class="release-card-meta"><span>Aventura</span><span>PC · Mac</span><span>Nota 4,8</span></div><strong class="release-price">R$ 24,90</strong></div>
+      </a>
+      <div class="recent-grid">
+        <a class="release-card card-hover" href="jogo.html?jogo=neon-requiem"><img src="assets/capa-neon-requiem.jpg" alt="Capa oficial de Neon Requiem"><div class="release-card-copy"><span class="release-date">Dispon&#237;vel na K.G.J.</span><h3>Neon Requiem</h3><p>A&#231;&#227;o / FPS / Cyberpunk</p><div class="release-card-meta"><span>PC</span><span>Sem avalia&#231;&#245;es</span></div><strong class="release-price">A definir</strong></div></a>
+        <a class="release-card card-hover" href="jogo.html?jogo=echoes-of-valoria"><img src="assets/capa-echoes-of-valoria.jpg" alt="Capa oficial de Echoes of Valoria"><div class="release-card-copy"><span class="release-date">Dispon&#237;vel na K.G.J.</span><h3>Echoes of Valoria</h3><p>Aventura / Fantasia / Explora&#231;&#227;o</p><p class="synopsis-short">Explore as ru&#237;nas de Valoria com Elian e siga os ecos ligados &#224; antiga Can&#231;&#227;o.</p><div class="release-card-meta"><span>PC</span><span>Sem avalia&#231;&#245;es</span></div><strong class="release-price">A definir</strong></div></a>
+        <a class="release-card card-hover" href="jogo.html?jogo=mindshift"><img src="assets/capa-mindshift.jpg" alt="Capa oficial de Mindshift"><div class="release-card-copy"><span class="release-date">Dispon&#237;vel na K.G.J.</span><h3>Mindshift</h3><p>Puzzle / Estrat&#233;gia</p><p class="synopsis-short">Resolva enigmas, manipule padr&#245;es e explore salas onde nem tudo &#233; o que parece.</p><div class="release-card-meta"><span>PC</span><span>Sem avalia&#231;&#245;es</span></div><strong class="release-price">A definir</strong></div></a>
+        <a class="release-card card-hover" href="jogo.html?jogo=neon-na-veia"><img src="assets/capa-neon.svg" alt="Raio sobre uma arena geométrica neon"><div class="release-card-copy"><span class="release-date">12 de setembro de 2026</span><h3>Neon na Veia</h3><p>Ação</p><div class="release-card-meta"><span>PC · Linux</span><span>Nota 4,9</span></div><strong class="release-price">R$ 32,00</strong></div></a>
+        <a class="release-card card-hover" href="jogo.html?jogo=jardim-de-outro-mundo"><img src="assets/capa-jardim.svg" alt="Flor fantástica em um jardim noturno"><div class="release-card-copy"><span class="release-date">29 de agosto de 2026</span><h3>Jardim de Outro Mundo</h3><p>Relax</p><div class="release-card-meta"><span>PC · Switch</span><span>Nota 4,7</span></div><strong class="release-price">R$ 18,50</strong></div></a>
+        <a class="release-card card-hover" href="jogo.html?jogo=depois-das-seis"><img src="assets/capa-seis.svg" alt="Relógio marcando seis horas"><div class="release-card-copy"><span class="release-date">8 de agosto de 2026</span><h3>Depois das Seis</h3><p>Puzzle</p><div class="release-card-meta"><span>PC · Mac</span><span>Nota 4,6</span></div><strong class="release-price">R$ 21,90</strong></div></a>
+      </div>
+    </section>
+
+    <section class="release-section upcoming-section" aria-labelledby="upcomingTitle">
+      <div class="release-section-heading"><div><p class="release-kicker">PRÓXIMAS AVENTURAS</p><h2 id="upcomingTitle">Em breve</h2></div><span class="upcoming-note">Datas previstas</span></div>
+      <div class="upcoming-grid">
+        <a class="upcoming-card card-hover" href="jogo.html?jogo=a-ultima-aurora"><div class="upcoming-image"><img src="assets/capa-ultima-aurora.svg" alt="Última luz do sol entre montanhas escuras"><span class="upcoming-badge">LANÇAMENTO PREVISTO</span></div><div class="upcoming-card-copy"><span class="release-date">30 de outubro de 2026</span><h3>A Última Aurora</h3><p>Explore um mundo no crepúsculo e descubra o que resta depois da última luz.</p><div class="release-card-meta"><span>Aventura</span><span>PC · Mac</span></div><strong class="release-price">Preço em breve</strong></div></a>
+        <a class="upcoming-card card-hover" href="jogo.html?jogo=ruinas-de-vertice"><div class="upcoming-image"><img src="assets/capa-ruinas-vertice.svg" alt="Portal roxo entre ruínas antigas sob o céu noturno"><span class="upcoming-badge">LANÇAMENTO PREVISTO</span></div><div class="upcoming-card-copy"><span class="release-date">20 de novembro de 2026</span><h3>Ruínas de Vértice</h3><p>Resolva os enigmas de uma cidade esquecida e atravesse seus portais.</p><div class="release-card-meta"><span>Puzzle · Aventura</span><span>PC</span></div><strong class="release-price">Preço em breve</strong></div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="index.html"><span class="brand-copy">K.G.J.<small>Kingdom of Gamers Juniors</small></span></a><span>Um lugar para jogos que merecem ser descobertos.</span><span class="footer-copy">Copyright 2026 K.G.J.</span></footer>
+</body>
+</html>

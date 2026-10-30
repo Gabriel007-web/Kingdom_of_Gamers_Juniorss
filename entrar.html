@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <script src="js/api.js" defer></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B0B12">
+  <meta name="description" content="Entre na sua conta K.G.J."><link rel="icon" type="image/svg+xml" href="assets/kgj-mark.svg"><title>Entrar — K.G.J.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/conta.css">
+  <script src="js/jogos-adicionais.js" defer></script>
+  <script src="js/busca.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/conta-api.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand brand-header" href="index.html" aria-label="K.G.J. — Voltar para a página inicial"><img src="assets/mascote-kgj-logo.png" alt="" width="54" height="54" aria-hidden="true"></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html#descobrir">Descobrir</a><a href="destaques.html">Destaques</a><a href="catalogo.html">Catálogo</a><a href="index.html#criadores">Para criadores</a></nav>
+    <div class="nav-actions"><div class="header-search" id="headerSearch"><label class="header-search-field"><span class="visually-hidden">Buscar jogos</span><input id="siteSearch" type="search" placeholder="Buscar jogos..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions"></label><div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div></div><a class="login-link" href="entrar.html" aria-current="page">Entrar</a><a class="button button-small" href="criar-conta.html">Criar conta</a></div>
+  </header>
+  <main class="account-main">
+    <section class="account-card" aria-labelledby="accountTitle">
+      <p class="account-kicker">BEM-VINDO DE VOLTA</p><h1 id="accountTitle">Entrar na K.G.J.</h1><p class="account-intro">Acesse sua conta para acompanhar seus jogos e criadores favoritos.</p>
+      <form class="account-form">
+        <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+        <label for="senha">Senha</label><input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Sua senha" required>
+        <button class="button account-submit" type="submit" aria-describedby="accountNotice">Entrar</button>
+      </form>
+      <p class="account-notice" id="accountNotice">Use o e-mail e a senha cadastrados para acessar sua conta.</p>
+      <p class="account-switch">Ainda não tem conta? <a href="criar-conta.html">Criar conta</a></p>
+    </section>
+  </main>
+  <footer><a class="brand" href="index.html"><span class="brand-copy">K.G.J.<small>Kingdom of Gamers Juniors</small></span></a><span>Um lugar para jogos que merecem ser descobertos.</span><span class="footer-copy">Copyright 2026 K.G.J.</span></footer>
+</body>
+</html>
+

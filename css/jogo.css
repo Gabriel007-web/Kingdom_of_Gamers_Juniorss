@@ -1,0 +1,26 @@
+.game-detail-main{width:min(1080px,88%);min-height:calc(100vh - 162px);margin:0 auto;padding:54px 0 80px}
+.game-breadcrumb{display:flex;align-items:center;gap:9px;margin-bottom:25px;color:#928da2;font:500 11px Inter,Arial,sans-serif}
+.game-breadcrumb a{color:#c7b2ef}.game-breadcrumb span:last-child{color:#aaa6ba}
+.game-detail{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:48px;align-items:center}
+.game-detail-art{position:relative;overflow:hidden;min-height:350px;border:1px solid #34304b;border-radius:10px;background:#14183A;box-shadow:0 15px 40px #0006}
+.game-detail-art img{display:block;width:100%;height:100%;min-height:350px;position:absolute;inset:0;object-fit:cover;transition:transform .3s ease}
+.game-detail-category{position:absolute;left:18px;top:18px;padding:7px 10px;border:1px solid #8051dd;border-radius:4px;background:#6B2FD9;color:#fff;font:700 10px Inter,Arial,sans-serif}
+.game-detail-copy{padding:12px 0}
+.game-detail-kicker{margin:0 0 13px;color:#b49be8;font:700 10px Inter,Arial,sans-serif;letter-spacing:1.5px}
+.game-detail-copy h1{margin:0;color:#fff;font:700 clamp(30px,4vw,43px)/1.18 Sora,Inter,sans-serif;letter-spacing:-1.3px}
+.game-detail-description{margin:15px 0 25px;color:#b5b0c1;font:400 14px/1.8 Inter,Arial,sans-serif}
+#gameDetail[data-game-slug="echoes-of-valoria"] .game-detail-description{padding:17px 19px;border-left:3px solid #6B2FD9;border-radius:0 6px 6px 0;background:linear-gradient(105deg,#14183A,#10111d 78%);color:#e0dbea}
+#gameDetail[data-game-slug="mindshift"] .game-detail-description{white-space:pre-line}
+#gameDetail[data-game-slug="mindshift"] .game-detail-description strong{color:#fff;font-weight:700}
+.game-facts{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:0}
+.game-facts div{padding:12px;border:1px solid #29283b;border-radius:5px;background:#10111d}
+.game-facts dt,.game-detail-price span{color:#928da2;font:500 10px Inter,Arial,sans-serif}
+.game-facts dd{margin:6px 0 0;color:#f4f2fb;font:600 12px Sora,Inter,sans-serif}
+.game-detail-price{display:flex;align-items:center;justify-content:space-between;margin:20px 0;padding:15px 0;border-top:1px solid #29283b;border-bottom:1px solid #29283b}
+.game-detail-price strong{color:#fff;font:700 20px Sora,Inter,sans-serif}
+.detail-back{justify-content:center}
+.game-not-found{padding:80px 0;text-align:center;color:#c0bbcf;font:400 15px/1.7 Inter,Arial,sans-serif}
+.game-not-found a{color:#c7b2ef;font-weight:700}
+.game-detail-main [hidden]{display:none}
+@media(hover:hover) and (pointer:fine){.game-detail-art:hover img{transform:scale(1.05)}.game-not-found a:hover{color:#fff}}
+@media(max-width:760px){.game-detail-main{width:90%;padding:35px 0 58px}.game-detail{grid-template-columns:1fr;gap:24px}.game-detail-art,.game-detail-art img{min-height:clamp(210px,58vw,340px)}.game-detail-copy{padding:0}}

@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#0B0B12"/><stop offset=".65" stop-color="#14183A"/><stop offset="1" stop-color="#21183d"/></linearGradient><radialGradient id="glow"><stop stop-color="#8273C6" stop-opacity=".48"/><stop offset="1" stop-color="#8273C6" stop-opacity="0"/></radialGradient></defs>
+  <path fill="url(#sky)" d="M0 0h800v500H0z"/><ellipse cx="572" cy="164" rx="250" ry="230" fill="url(#glow)"/><circle cx="572" cy="164" r="61" fill="#8273C6" fill-opacity=".68"/><circle cx="594" cy="151" r="57" fill="#14183A"/>
+  <g fill="#fff" fill-opacity=".72"><circle cx="93" cy="77" r="3"/><circle cx="228" cy="124" r="2"/><circle cx="701" cy="189" r="3"/><circle cx="524" cy="64" r="2"/></g>
+  <path d="M0 355L134 194 298 356 458 166 580 356 679 225 800 348v152H0z" fill="#1b1b3e"/><path d="M0 401L204 293 300 411 493 274 581 405 641 319 800 408v92H0z" fill="#101326"/>
+  <path d="M526 500q-22-79 48-128t-13-114" fill="none" stroke="#8273C6" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0 441q180-44 360 0t440-4v63H0z" fill="#0B0B12" fill-opacity=".72"/><path d="M0 441q180-44 360 0t440-4" fill="none" stroke="#8273C6" stroke-opacity=".42" stroke-width="2"/>
+  <text x="758" y="478" text-anchor="end" fill="#FFFFFF" fill-opacity=".4" font-family="Sora,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">K.G.J. / 29</text>
+</svg>

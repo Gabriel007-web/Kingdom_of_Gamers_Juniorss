@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0B0B12"/><stop offset=".58" stop-color="#14183A"/><stop offset="1" stop-color="#0B0B12"/></linearGradient><radialGradient id="halo"><stop stop-color="#8644C7" stop-opacity=".34"/><stop offset="1" stop-color="#8644C7" stop-opacity="0"/></radialGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/><circle cx="545" cy="275" r="220" fill="url(#halo)"/><circle cx="555" cy="355" r="190" fill="url(#halo)" opacity=".62"/>
+  <g fill="none" stroke="#346EAF" stroke-opacity=".24" stroke-width="2"><path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/></g>
+  <g transform="translate(400 235) rotate(10)" fill="none" stroke="#8644C7" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-105-72h145l65 65v112h-145l-65-65z" fill="#0B0B12" fill-opacity=".55"/><path d="M-55-25h110v110H-55z" stroke="#346EAF"/><path d="M0-72v47m55 55h50M-55 30h-50m105 55v48" stroke-opacity=".8"/>
+    <circle cx="0" cy="30" r="20" fill="#8644C7" fill-opacity=".24"/><path d="M-9 30h18M0 21v18" stroke="#346EAF"/>
+  </g>
+  <g fill="#8644C7" fill-opacity=".72"><circle cx="112" cy="103" r="5"/><circle cx="674" cy="144" r="4"/><circle cx="624" cy="373" r="6"/><circle cx="176" cy="350" r="4"/></g>
+  <rect x="0" y="414" width="800" height="86" fill="#0B0B12" fill-opacity=".82"/><text x="42" y="463" fill="#FFFFFF" font-family="Sora,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="1.5">The Forgotten Key</text><text x="756" y="463" text-anchor="end" fill="#8644C7" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">K.G.J. / PUZZLE</text>
+</svg>
